@@ -48,33 +48,36 @@ public class Controller implements Initializable {
     public void display(ActionEvent actionEvent) {
         Button btn = (Button) actionEvent.getSource();
 
-        if(btn.getText().equals(".")){
-            if(valeur.getText().equals("")){
+        if (btn.getText().equals(".")) {
+            if (valeur.getText().equals("")) {
                 //NO . at the beginning
-            }else{
-                int is_there_dot = 0;
+            } else {
+                int isThereDot = 0;
 
-                for(int i = 0; i<valeur.getText().length(); i++)
+                for (int i = 0; i<valeur.getText().length(); i++)
                     if(valeur.getText().charAt(i) == '.')
-                        is_there_dot = 1;
+                        isThereDot = 1;
 
-                if(is_there_dot == 0)
+                if (isThereDot == 0)
                     valeur.setText(valeur.getText().concat(btn.getText()));
             }
-        }else if(btn.getText().equals("0")){
+        } else if (btn.getText().equals("0")) {
             if(valeur.getText().equals("")){
                 //NO 0 at the beginning
-            }else{
+            } else {
                 valeur.setText(valeur.getText().concat(btn.getText()));
             }
-        }else if(btn.getText().equals("C")){
+        } else if(btn.getText().equals("C")) {
             valeur.setText("");
-        }else{
+        } else {
             valeur.setText(valeur.getText().concat(btn.getText()));
         }
-
     }
 
+    /**
+     * Close the window when Quit is clicked.
+     * @param actionEvent
+     */
     public void quit(ActionEvent actionEvent) {
         ((Stage)(((Button)actionEvent.getSource()).getScene().getWindow())).close();
     }

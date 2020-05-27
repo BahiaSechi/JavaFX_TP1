@@ -9,6 +9,23 @@ import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
 
+/**
+ * Address :
+ * ENSICAEN
+ * 6 Boulevard Maréchal Juin
+ * F-14050 Caen Cedex
+ *
+ * Note :
+ * This file is owned by an ENSICAEN student.  No portion of this
+ * document may be reproduced, copied  or revised without written
+ * permission of the authors.
+ *
+ * @author BURON Manfred <manfred.buron@ecole.ensicaen.fr>
+ * @author Bahia SECHI <bahia.sechi@ecole.ensicaen.fr>
+ * @version 1.0
+ */
+
+
 public class Main extends Application {
 
     @Override

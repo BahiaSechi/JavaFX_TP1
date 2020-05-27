@@ -29,8 +29,8 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" minWidth="300.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="C" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
-                <Button minHeight="30.0" minWidth="300.0" mnemonicParsing="false" text="Quit" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                <Button alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" minWidth="300.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#display" text="C" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                <Button minHeight="30.0" minWidth="300.0" mnemonicParsing="false" onAction="#quit" text="Quit" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
                 <Button fx:id="button0" contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" onAction="#display" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
                 <Button contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" onAction="#display" text="." GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
                 <Button contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" text="=" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" />

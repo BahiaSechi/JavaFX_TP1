@@ -3,6 +3,7 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.*;
@@ -41,6 +42,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
     }
+
     /**
      * Displays the number clicked on the textfield
      * @param actionEvent
@@ -83,4 +85,12 @@ public class Controller implements Initializable {
     }
 
 
+    public void about(ActionEvent actionEvent) {
+        Alert about = new Alert(Alert.AlertType.INFORMATION);
+        about.setTitle("About");
+        about.setContentText("This project is part of the programming course (ENSICAEN - Engineering School). \n" +
+                "Authors : BURON Manfred & SECHI Bahia \n" +
+                "Date : May 2020");
+        about.show();
+    }
 }

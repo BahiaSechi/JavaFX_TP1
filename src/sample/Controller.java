@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.*;
 
 
 import java.awt.*;
@@ -28,6 +29,7 @@ public class Controller implements Initializable {
     }
 
     public void affichage(ActionEvent actionEvent) {
-        valeur.setText("Coucou");
+        Button btn = (Button) actionEvent.getSource();
+        valeur.setText(btn.getText());
     }
 }

@@ -30,9 +30,11 @@ import java.lang.Float;
  */
 
 public class Controller implements Initializable {
+    public char operand = ' ';
+    public float savedvalue = 0.0f;
 
     @FXML
-    private TextField valeur;
+    private TextField valeur, saved;
 
     @FXML
     private Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, buttonA, buttonB, buttonC, buttonE, buttonF;
@@ -63,7 +65,7 @@ public class Controller implements Initializable {
             }
         }else if(btn.getText().equals("0")){
             if(valeur.getText().equals("")){
-                //NO 0 at the beginning
+                valeur.setText("0.");
             }else{
                 valeur.setText(valeur.getText().concat(btn.getText()));
             }
@@ -77,6 +79,43 @@ public class Controller implements Initializable {
 
     public void quit(ActionEvent actionEvent) {
         ((Stage)(((Button)actionEvent.getSource()).getScene().getWindow())).close();
+    }
+
+    public void operation(ActionEvent actionEvent) {
+        Button btn = (Button) actionEvent.getSource();
+        float temp;
+
+        if(valeur.getText().equals("")){
+
+        }else{
+            if(operand == ' '){
+                if(btn.getText().equals("=")){
+
+                }else{
+                    savedvalue = Float.parseFloat(valeur.getText());
+                    operand = btn.getText().charAt(0);
+                    valeur.setText("");
+                    saved.setText(Float.toString(savedvalue) + " " + operand );
+                }
+            }else if(btn.getText().charAt(0) == '='){
+                if(operand == '+'){
+                    savedvalue = savedvalue + Float.parseFloat(valeur.getText());
+
+                }else if(operand == '-'){
+                    savedvalue = savedvalue - Float.parseFloat(valeur.getText());
+
+                }else if(operand == '*'){
+                    savedvalue = savedvalue * Float.parseFloat(valeur.getText());
+
+                }else if(operand == '/'){
+                    savedvalue = savedvalue / Float.parseFloat(valeur.getText());
+                }
+
+                valeur.setText(Float.toString(savedvalue));
+                operand = ' ';
+                saved.setText(Float.toString(savedvalue) + " " + operand );
+            }
+        }
     }
 
 

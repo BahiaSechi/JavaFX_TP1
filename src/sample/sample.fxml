@@ -35,7 +35,7 @@
                 <Button contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" text="," GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
                 <Button contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" text="=" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
                 <Button contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
-                <Button fx:id="button1" contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                <Button fx:id="button1" contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" onAction="#affichage" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
                 <Button fx:id="button2" contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
                 <Button fx:id="button3" contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
                 <Button contentDisplay="CENTER" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
@@ -68,7 +68,7 @@
                     </font>
                 </Text>
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Base : " GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
-                <TextField alignment="CENTER_RIGHT" editable="false" maxHeight="60.0" maxWidth="300.0" minHeight="60.0" minWidth="300.0" prefHeight="60.0" prefWidth="300.0" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                <TextField fx:id="valeur" alignment="CENTER_RIGHT" editable="false" maxHeight="60.0" maxWidth="300.0" minHeight="60.0" minWidth="300.0" prefHeight="60.0" prefWidth="300.0" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>

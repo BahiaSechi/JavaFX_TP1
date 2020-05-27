@@ -9,8 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
 
-//https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java/23832-tp-creez-une-calculatrice
-
 public class Main extends Application {
 
     @Override

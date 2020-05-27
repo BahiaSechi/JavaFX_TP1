@@ -1,16 +1,17 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+
 
 import java.awt.*;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class Controller {
-
-    /**
-     * Liste opérande
-     * liste operateurs
-     * Mode base
-     */
+public class Controller implements Initializable {
 
     @FXML
     private TextField valeur;
@@ -21,4 +22,12 @@ public class Controller {
     @FXML
     private Button buttonA, buttonB, buttonC, buttonE, buttonF;
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+
+    public void affichage(ActionEvent actionEvent) {
+        valeur.setText("Coucou");
+    }
 }

@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -17,7 +18,7 @@ import java.lang.Float;
 /**
  * Address :
  * ENSICAEN
- * 6 Boulevard Maréchal Juin
+ * 6 Boulevard Marechal Juin
  * F-14050 Caen Cedex
  *
  * Note :
@@ -83,7 +84,7 @@ public class Controller implements Initializable {
      * @param actionEvent
      */
     public void quit(ActionEvent actionEvent) {
-        ((Stage)(((Button)actionEvent.getSource()).getScene().getWindow())).close();
+        Platform.exit();
     }
 
     public void operation(ActionEvent actionEvent) {

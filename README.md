@@ -1,6 +1,6 @@
 # Calculator : JavaFX
 
-## First project of following course : "Introduction à la programmation"
+## First practical work of following course : "Java et Programmation Objet"
 
 This project is part of the programming course (ENSICAEN - Engineering School).
 The goal is to become familiar with the Java language to create a calculator.

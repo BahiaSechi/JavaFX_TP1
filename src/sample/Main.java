@@ -37,8 +37,6 @@ public class Main extends Application {
         primaryStage.show();
 
         primaryStage.setResizable(false);
-        primaryStage.getIcons().add(new Image("img\\app-ikon.png"));
-
 
     }
 

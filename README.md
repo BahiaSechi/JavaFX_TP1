@@ -8,7 +8,7 @@ The goal is to become familiar with the Java language to create a calculator.
 
 ## User manual
 
-**Step 1:** Launch the game
+**Step 1:** Launch the project
 
 1. Go to the root folder of the project.
 2. Open a terminal.
